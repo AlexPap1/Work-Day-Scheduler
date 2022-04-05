@@ -9,9 +9,14 @@ SO THAT I can manage my time effectively
 Acceptance Criteria
 ---------------------------------------------------------------------------------------------------------------
 GIVEN I am using a daily planner to create a schedule
+<br />
 WHEN I open the planner
+<br />
 THEN the current day is displayed at the top of the calendar
-    I added the date using the moment.js function with a Month, date, and year format. I also included text to specify that the date displayed is the curretn date.
+<br />
+-  I added the date using the moment.js function with a Month, date, and year format. I also included text to specify that the date displayed is the current date.
+
+---------------------------------------------------------------------------------------------------------------
 
 WHEN I scroll down
 THEN I am presented with time blocks for standard business hours
