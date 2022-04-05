@@ -1,4 +1,9 @@
 # Work Day Scheduler Starter Code
+Work Schedule Maker
+=============================================================================================================
+This is designed to help organize tasks during a workday
+-------------------------------------------------------------------------------------------------------------
+![](Develop/Screenshot%202022-04-05%20142906.png)
 
 User Story
 -------------------------------------------------------------------------------------------------------------
@@ -25,8 +30,12 @@ THEN I am presented with time blocks for standard business hours
 
 -------------------------------------------------------------------------------------------------------------
 WHEN I view the time blocks for that day
+<br />
 THEN each time block is color-coded to indicate whether it is in the past, present, or future
+<br />
+-  I defined a number value for the time block for each block, and for the moment.js value. I then compared the time to the present time to determine which style would be applied with addClass.
 
+-------------------------------------------------------------------------------------------------------------
 WHEN I click into a time block
 <br />
 THEN I can enter an event
@@ -35,7 +44,14 @@ THEN I can enter an event
 
 -------------------------------------------------------------------------------------------------------------
 WHEN I click the save button for that time block
+<br />
 THEN the text for that event is saved in local storage
+<br />
+-  I used a var for the hour and description and followed with a siblings command for each to save them under a local storage, which required two variables. I made sure the hour was saved as text and the description was saved as a value.
 
+-------------------------------------------------------------------------------------------------------------
 WHEN I refresh the page
+<br />
 THEN the saved events persist
+<br />
+-  For this I created a function that is automatically called when the page is loaded that uses a Localstorage.getItem to grab the values of the previous LocalStorage.setItem.
